@@ -1,0 +1,65 @@
+# ──────────────────────────────────────────
+#  WiFi Radar Pro — .gitignore
+# ──────────────────────────────────────────
+
+# ── MicroPython / ESP32 artifacts ──
+*.mpy               # Compiled MicroPython bytecode
+*.pyc               # Python bytecodes (if cross-compiled)
+
+# ── Thonny IDE settings ──
+.thonny/
+.thonny_history
+
+# ── ampy / mpremote / rshell temp files ──
+.upload_cache/
+
+# ── Python (desktop/venv) ──
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+.Python
+env/
+venv/
+.venv/
+pip-log.txt
+pip-delete-this-directory.txt
+
+# ── OS garbage ──
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# macOS
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+
+# Linux
+*~
+.nfs*
+
+# ── Editor / IDE ──
+.vscode/
+.idea/
+*.suo
+*.user
+*.swp
+*.swo
+*.sublime-project
+*.sublime-workspace
+
+# ── Logs and temporary files ──
+*.log
+*.tmp
+*.bak
+*.orig
+client_log.txt
+
+# ── Secrets — NEVER commit credentials! ──
+secrets.py
+config_local.py
+wifi_credentials.py
